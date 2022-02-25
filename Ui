@@ -1,0 +1,8 @@
+{
+android.graphics.drawable.GradientDrawable SketchUi = new android.graphics.drawable.GradientDrawable();
+SketchUi.setColor(0xFFFFFFFF);SketchUi.setCornerRadius(getDip(25));
+SketchUi.setStroke((int)getDip(2) ,0xFF000000);
+btn.setElevation(getDip(5));
+android.graphics.drawable.RippleDrawable SketchUi_RD = new android.graphics.drawable.RippleDrawable(new android.content.res.ColorStateList(new int[][]{new int[]{}}, new int[]{0xFFE0E0E0}), SketchUi, null);
+btn.setBackground(SketchUi_RD);
+}
